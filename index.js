@@ -4,7 +4,6 @@ const debug = require('debug')('mq:debug');
 const mongodb = require('mongodb');
 const mq = require('mongodb-queue');
 const co = require('co');
-const schedule = require('node-schedule');
 const EventEmitter = require('events');
 
 class MQ extends EventEmitter {

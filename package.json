@@ -1,6 +1,6 @@
 {
   "name": "mmq",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mongodb-Message-Queue",
   "main": "index.js",
   "scripts": {
