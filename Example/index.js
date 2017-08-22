@@ -1,7 +1,7 @@
 const options = {
   uri: 'mongodb://localhost/mmq',
   consumeInterval: 1000,
-  maxConsumption: 10,
+  maxConsumption: 1000,
   visibility: 10,
   consumers: {
     ping: time => {
@@ -20,4 +20,4 @@ setInterval(_ => {
     operation: 'ping',
     params: [new Date()]
   });
-}, 2000);
+}, 100);

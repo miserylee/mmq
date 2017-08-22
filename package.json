@@ -4,7 +4,7 @@
   "description": "Mongodb-Message-Queue",
   "main": "index.js",
   "scripts": {
-    "test": "DEBUG=mq:info,mq:error,mq:debug mocha ./test"
+    "test": "DEBUG=mq:* mocha ./test"
   },
   "repository": {
     "type": "git",

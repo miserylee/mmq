@@ -124,10 +124,10 @@ class MQ extends EventEmitter {
         clearInterval(retainInterval);
       }.bind(this)).catch(err => {
         error(`MQ [${this.name}] consumes message [${msg.id}] with name [${messageName}] failed with error [${err.message}]!`);
+        clearInterval(retainInterval);
         err.msgId = msg.id;
         err.operation = msg.payload.operation;
         this.options.errorListener(err);
-        clearInterval(retainInterval);
       });
     });
   }
